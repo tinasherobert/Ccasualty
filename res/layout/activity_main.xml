@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
      android:background="#e5e4e2"
-    tools:context="it.sephiroth.android.library.floatingmenu.app.MainActivity">
+    tools:context="com.c.casualty.app.MainActivity">
     
     <ProgressBar
         android:id="@+id/progressBar"

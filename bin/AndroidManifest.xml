@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="it.sephiroth.android.library.floatingmenu.app">
+	package="com.c.casualty.app">
  <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="17" />
@@ -12,7 +12,7 @@
 		android:largeHeap="true"
 		android:theme="@style/AppTheme">
 		<activity
-			android:name="it.sephiroth.android.library.floatingmenu.app.MainActivity"
+			android:name="com.c.casualty.app.MainActivity"
 			android:label="@string/title_activity_main_activity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -20,21 +20,21 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name="it.sephiroth.android.library.floatingmenu.app.MainActivity2"
+			android:name="com.c.casualty.app.MainActivity2"
 			android:label="@string/title_activity_main_activity2"></activity>
 		
 		<activity
-			android:name="it.sephiroth.android.library.floatingmenu.app.TabActivity1"
+			android:name="com.c.casualty.app.TabActivity1"
 			></activity>
 		<activity
-			android:name="it.sephiroth.android.library.floatingmenu.app.TabActivity3"
+			android:name="com.c.casualty.app.TabActivity3"
 			></activity>
 		<activity
-			android:name="it.sephiroth.android.library.floatingmenu.app.TabActivity2"
+			android:name="com.c.casualty.app.TabActivity2"
 			></activity>
 		
 		<activity
-			android:name="it.sephiroth.android.library.floatingmenu.app.ScrollViewActivity"
+			android:name="com.c.casualty.app.ScrollViewActivity"
 			android:icon="@drawable/ic_location_map"
             android:label="@string/new_york_city"
             android:theme="@style/AppTheme.TranslucentActionBar"></activity>
