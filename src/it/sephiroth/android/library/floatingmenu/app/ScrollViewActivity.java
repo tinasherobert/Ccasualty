@@ -24,7 +24,7 @@ import android.widget.TabHost.TabSpec;
 
 import com.manuelpeinado.fadingactionbar.FadingActionBarHelper;
 
-public class ScrollViewActivity extends TabActivity {
+public class ScrollViewActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
