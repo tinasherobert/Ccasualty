@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+   android:background="@drawable/pop_bg"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.makeramen.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/headshot"
+            app:border_width="0dip"
+            app:corner_radius="50dip" />
+
+        <LinearLayout
+            android:id="@+id/names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon"
+            android:orientation="vertical"
+            android:paddingLeft="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hopewell Mutanda"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P0111849M"
+                android:textColor="@android:color/holo_blue_dark" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/dummy"
+        android:layout_marginBottom="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+       android:layout_below="@+id/headerLayout"
+        >
+
+    <RelativeLayout
+        android:id="@+id/datelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/date_lable"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/date_lable"
+            android:paddingLeft="20dp"
+            android:text="26 July 2010" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timelayout"
+         android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datelayout"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/time_lable"
+             android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/time_lable"
+            android:paddingLeft="20dp"
+            android:text="10:30 AM" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/doc"
+         android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timelayout"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/doc_lable"
+             android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+             android:entries="@array/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/doc_lable"
+            android:paddingLeft="20dp" />
+    </RelativeLayout>
+    
+         
+         
+     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="#c0c0c0"
+       android:layout_below="@id/dummy"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+             android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_time" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:src="@drawable/ic_action_go_to_today" />
+        </LinearLayout>
+            <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_send_now" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

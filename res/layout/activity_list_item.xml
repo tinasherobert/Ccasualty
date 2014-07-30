@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical"
+    android:showDividers="none" >
+
+    <LinearLayout 
+        style="@style/card_outer"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/inner_frame"
+        style="@style/card_inner"
+        android:layout_width="fill_parent" >
+
+        <ImageView
+            android:id="@+id/product_icon"
+            android:layout_width="60dp"
+           
+            android:layout_height="60dp"
+            android:src="@drawable/noti" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/product_icon"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:text="Westend Private Hospital"
+             />
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:maxLines="1"
+            android:text="Dr H. Mutanda"
+            />
+
+        <TextView
+            android:id="@+id/stat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/desc"
+            android:text="Thusrday 8 July"
+             />
+        <TextView
+            android:id="@+id/short_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/product_icon"
+            android:text="Mukonama airwara chose ndakashanda naye zvakasimba ndichida kunyatsoona kuti dambudziko ringava raive papi"/>
+	  <View
+	    android:layout_below="@id/short_desc"
+	    android:paddingTop="5dp"
+	     android:id="@+id/div"
+	    android:paddingBottom="5dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.5dp"
+	    android:background="#c0c0c0"/>
+
+	  <ImageView
+	      android:id="@+id/imageView1"
+	      android:layout_width="120dp"
+	      android:layout_height="90dp"
+	      android:paddingTop="5dp"
+	      android:layout_below="@+id/div"
+	      android:src="@drawable/mushonga" />
+	  <TextView
+            android:id="@+id/pre"
+            android:layout_toRightOf="@id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+	        android:layout_below="@+id/div"
+            android:text="Acetaminophen\nAdderall\nCiprofloxacin\nCitalopram"/>
+
+    </RelativeLayout>
+    
+    <ImageView   
+        style="@style/card_shadow"
+        />
+        
+  </LinearLayout> 
+</RelativeLayout>
