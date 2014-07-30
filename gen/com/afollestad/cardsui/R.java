@@ -62,11 +62,11 @@ public final class R {
 		public static final int unpressed_background = 0x7f020028;
 	}
 	public static final class id {
-		public static final int day = 0x7f0d002a;
+		public static final int day = 0x7f0d0029;
 		public static final int inner_frame = 0x7f0d0000;
-		public static final int month = 0x7f0d0029;
-		public static final int titleFrame = 0x7f0d0017;
-		public static final int year = 0x7f0d002b;
+		public static final int month = 0x7f0d0028;
+		public static final int titleFrame = 0x7f0d0016;
+		public static final int year = 0x7f0d002a;
 	}
 	public static final class layout {
 		public static final int clickable_toast = 0x7f030005;

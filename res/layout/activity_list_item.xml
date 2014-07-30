@@ -21,33 +21,23 @@
         style="@style/card_inner"
         android:layout_width="fill_parent" >
 
-        <ImageView
-            android:id="@+id/product_icon"
-            android:layout_width="60dp"
-           
-            android:layout_height="60dp"
-            android:src="@drawable/noti" />
-
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/product_icon"
             android:maxLines="1"
-            android:textSize="20sp"
             android:text="Westend Private Hospital"
-             />
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            
             android:layout_alignLeft="@+id/textView1"
             android:layout_below="@+id/textView1"
             android:maxLines="1"
-            android:text="Dr H. Mutanda"
-            />
+            android:text="Dr H. Mutanda" />
 
         <TextView
             android:id="@+id/stat"
@@ -55,42 +45,42 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView1"
             android:layout_below="@+id/desc"
-            android:text="Thusrday 8 July"
-             />
+            android:text="Thusrday 8 July" />
+
         <TextView
             android:id="@+id/short_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:layout_below="@+id/product_icon"
-            android:text="Mukonama airwara chose ndakashanda naye zvakasimba ndichida kunyatsoona kuti dambudziko ringava raive papi"/>
-	  <View
-	    android:layout_below="@id/short_desc"
-	    android:paddingTop="5dp"
-	     android:id="@+id/div"
-	    android:paddingBottom="5dp"
-	    android:layout_width="fill_parent"
-	    android:layout_height="0.5dp"
-	    android:background="#c0c0c0"/>
+            android:paddingTop="5dp"
+            android:text="Mukonama airwara chose ndakashanda naye zvakasimba ndichida kunyatsoona kuti dambudziko ringava raive papi" />
 
-	  <ImageView
-	      android:id="@+id/imageView1"
-	      android:layout_width="120dp"
-	      android:layout_height="90dp"
-	      android:paddingTop="5dp"
-	      android:layout_below="@+id/div"
-	      android:src="@drawable/mushonga" />
-	  <TextView
+        <View
+            android:id="@+id/div"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/short_desc"
+            android:background="#c0c0c0"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/div"
+            android:paddingTop="5dp"
+            android:src="@drawable/mushonga" />
+
+        <TextView
             android:id="@+id/pre"
-            android:layout_toRightOf="@id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="5dp"
+            android:layout_below="@+id/div"
+            android:layout_toRightOf="@id/imageView1"
             android:paddingLeft="5dp"
-	        android:layout_below="@+id/div"
-            android:text="Acetaminophen\nAdderall\nCiprofloxacin\nCitalopram"/>
-
+            android:paddingTop="5dp"
+            android:text="Acetaminophen\nAdderall\nCiprofloxacin\nCitalopram" />
     </RelativeLayout>
     
     <ImageView   

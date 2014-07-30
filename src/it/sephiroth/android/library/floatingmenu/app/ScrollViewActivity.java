@@ -40,25 +40,24 @@ public class ScrollViewActivity extends TabActivity {
 	    TabHost tabHost = (TabHost)findViewById(android.R.id.tabhost);
 	
 	
-	    TabSpec tab1 = tabHost.newTabSpec("First Tab");
-	    TabSpec tab2 = tabHost.newTabSpec("Second Tab");
-	    TabSpec tab3 = tabHost.newTabSpec("Third tab");
-	
-	   // Set the Tab name and Activity
-	   // that will be opened when particular Tab will be selected
-	    tab1.setIndicator("Tab1");
-	    tab1.setContent(new Intent(this,TabActivity1.class));
-	    
-	    tab2.setIndicator("Tab2");
-	    tab2.setContent(new Intent(this,TabActivity2.class));
-	
-	    tab3.setIndicator("Tab3");
-	    tab3.setContent(new Intent(this,TabActivity3.class));
-	    
-	    /** Add the tabs  to the TabHost to display. */
-	    tabHost.addTab(tab1);
-	    tabHost.addTab(tab2);
-	    tabHost.addTab(tab3);
+//	    TabSpec tab1 = tabHost.newTabSpec("First Tab");
+//	    TabSpec tab2 = tabHost.newTabSpec("Second Tab");
+//	    TabSpec tab3 = tabHost.newTabSpec("Third tab");
+//	
+//	  
+//	    tab1.setIndicator("Tab1");
+//	    tab1.setContent(new Intent(this,TabActivity1.class));
+//	    
+//	    tab2.setIndicator("Tab2");
+//	    tab2.setContent(new Intent(this,TabActivity2.class));
+//	
+//	    tab3.setIndicator("Tab3");
+//	    tab3.setContent(new Intent(this,TabActivity3.class));
+//	    
+//	    
+//	    tabHost.addTab(tab1);
+//	    tabHost.addTab(tab2);
+//	    tabHost.addTab(tab3);
     }
 
    
