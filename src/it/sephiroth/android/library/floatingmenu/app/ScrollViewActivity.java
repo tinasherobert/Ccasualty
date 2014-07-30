@@ -37,7 +37,7 @@ public class ScrollViewActivity extends TabActivity {
        ;
 	    setContentView(helper.createView(this));
 	    helper.initActionBar(this);
-	    TabHost tabHost = (TabHost)findViewById(android.R.id.tabhost);
+	   // TabHost tabHost = (TabHost)findViewById(android.R.id.tabhost);
 	
 	
 //	    TabSpec tab1 = tabHost.newTabSpec("First Tab");

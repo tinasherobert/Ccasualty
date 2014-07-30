@@ -20,9 +20,9 @@ public final class R {
 		public static final int toast_offset = 0x7f060002;
 	}
 	public static final class id {
-		public static final int day = 0x7f0d0029;
-		public static final int month = 0x7f0d0028;
-		public static final int year = 0x7f0d002a;
+		public static final int day = 0x7f0d0028;
+		public static final int month = 0x7f0d0027;
+		public static final int year = 0x7f0d0029;
 	}
 	public static final class layout {
 		public static final int clickable_toast = 0x7f030005;
