@@ -2,11 +2,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="it.sephiroth.android.library.floatingmenu.app.MainActivity" >
-   
-    <item android:id="@+id/example2"
-        android:icon="@drawable/ic_action_event"
-        android:title="@string/advanced_example"
-        android:showAsAction="always" />
     
      <item android:id="@+id/search"
         android:icon="@drawable/ic_action_search"

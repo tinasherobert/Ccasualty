@@ -1,43 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.c.casualty.app">
- <uses-sdk
+    package="com.c.casualty.app" >
+
+    <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="17" />
-	<application
-		android:allowBackup="true"
-		android:icon="@drawable/ic_launcher"
-		android:label="@string/app_name"
-		android:hardwareAccelerated="true"
-		android:largeHeap="true"
-		android:theme="@style/AppTheme">
-		<activity
-			android:name="com.c.casualty.app.MainActivity"
-			android:label="@string/title_activity_main_activity">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-		</activity>
-		<activity
-			android:name="com.c.casualty.app.MainActivity2"
-			android:label="@string/title_activity_main_activity2"></activity>
-		
-		<activity
-			android:name="com.c.casualty.app.TabActivity1"
-			></activity>
-		<activity
-			android:name="com.c.casualty.app.TabActivity3"
-			></activity>
-		<activity
-			android:name="com.c.casualty.app.TabActivity2"
-			></activity>
-		
-		<activity
-			android:name="com.c.casualty.app.ScrollViewActivity"
-			android:icon="@drawable/ic_location_map"
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.c.casualty.app.MainMenu"
+            android:label="@string/title_activity_main_activity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.c.casualty.app.MainActivity2"
+            android:label="@string/title_activity_main_activity2" >
+        </activity>
+        <activity
+            android:name="com.c.casualty.app.ClerckSignUp"
+            android:label="@string/title_activity_main_activity2" >
+        </activity>
+        <activity
+            android:name="com.c.casualty.app.UserSignUp"
+            android:label="@string/title_activity_main_activity2" >
+        </activity>
+        <activity
+            android:name="com.c.casualty.app.DoctorSignUp"
+            android:label="@string/title_activity_main_activity2" >
+        </activity>
+        <activity
+            android:name="com.c.casualty.app.MainActivity"
+            android:label="@string/title_activity_main_activity2" >
+        </activity>
+        <activity android:name="com.c.casualty.app.Details" >
+        </activity>
+        <activity android:name="com.c.casualty.app.TabActivity3" >
+        </activity>
+        <activity android:name="com.c.casualty.app.TabActivity2" >
+        </activity>
+        <activity android:name="com.c.casualty.app.Login" >
+        </activity>
+        <activity android:name="com.c.casualty.app.ClerkMenu" >
+        </activity>
+        <activity android:name="com.c.casualty.app.ClerkPatientDetails" >
+        </activity>
+        
+         <activity android:name="com.c.casualty.app.DoctorMenu" >
+        </activity>
+        <activity
+            android:name="com.c.casualty.app.ScrollViewActivity"
+            android:icon="@drawable/ic_location_map"
             android:label="@string/new_york_city"
-            android:theme="@style/AppTheme.TranslucentActionBar"></activity>
-	</application>
+            android:theme="@style/AppTheme.TranslucentActionBar" >
+        </activity>
+        <activity
+            android:name="com.c.casualty.app.DoctorPatientDetails"
+            android:label="@string/title_activity_doctor_client_details" >
+        </activity>
+    </application>
 
 </manifest>

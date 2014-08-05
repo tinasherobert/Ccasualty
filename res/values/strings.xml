@@ -4,12 +4,17 @@
     <string name="app_name">Floating Action</string>
     <string name="title_activity_main_activity2">ViewPager Example</string>
     <string name="title_activity_main_activity">Simple Example</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
-	<string name="advanced_example">Advanced Example</string>
-	<string name="simple_example">Simple Example</string>
-	<string name="new_york_city">New York City</string>
+    <string name="title_section1">Patient Info</string>
+    <string name="title_section2">Initial Assesment</string>
+    <string name="title_section3">Risk Factors</string>
+    <string name="title_section4">Laboritory</string>
+    <string name="title_section5">Radiology</string>
+    <string name="title_section6">Notes</string>
+    <string name="title_section7">Payment Info</string>
+    
+    <string name="advanced_example">Advanced Example</string>
+    <string name="simple_example">Simple Example</string>
+    <string name="new_york_city">New York City</string>
     <string name="activity_title_scrollview">ScrollView sample</string>
     <string name="activity_title_listview">ListView sample</string>
     <string name="activity_title_light_bg">Light background sample</string>
@@ -26,12 +31,23 @@
     <string name="choose_city">Choose a city</string>
     <string name="action_change_dataset">Change dataset</string>
     <string name="activity_title_webview">WebView sample</string>
-     <string-array name="spinner">
+
+    <string-array name="spinner">
         <item>Dr H. Mutanda</item>
         <item>Dr T. Makaza</item>
         <item>Dr W. Ganizo</item>
         <item>Dr E. Musakwa</item>
-        
     </string-array>
+    <string-array name="person">
+        <item>Patient</item>
+        <item>Doctor</item>
+        <item>Clerk</item>
+    </string-array>
+
+    <string name="title_activity_doctor_client_details">DoctorClientDetails</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

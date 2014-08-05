@@ -20,12 +20,38 @@
         android:id="@+id/inner_frame"
         style="@style/card_inner"
         android:layout_width="fill_parent" >
+        
+        <TextView
+            android:id="@+id/doc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:maxLines="2"
+            android:text="Dr H. Mutanda"/>
+       <View
+	    android:layout_below="@id/doc_name"
+	    android:paddingTop="5dp"
+	    android:id="@+id/div8"
+	    android:paddingBottom="5dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.01dp"
+	    android:background="#c0c0c0"/>
+        
+      <RelativeLayout
+        android:id="@+id/headr_layout" 
+        android:layout_below="@id/div8"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/product_icon"
-            android:layout_width="60dp"
-           
-            android:layout_height="60dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/noti" />
 
         <TextView
@@ -33,6 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:textColor="@android:color/holo_blue_light"
             android:layout_toRightOf="@+id/product_icon"
             android:maxLines="1"
             android:text="Review"
@@ -42,16 +69,39 @@
             android:id="@+id/desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            
             android:layout_alignLeft="@+id/textView1"
             android:layout_below="@+id/textView1"
-            
+            android:textSize="12sp"
             android:text="Mukonama airwara chose ndakashanda naye zvakasimba ndichida kunyatsoona kuti dambudziko ringava raive papi"
             />
-       <View
-	    android:layout_below="@id/desc"
+         <TextView
+            android:id="@+id/next_rev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/desc"
+            android:textSize="12sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Next Review: 12 Aug 2014"/>
+        
+      </RelativeLayout>  
+        
+    
+       <TextView
+            android:id="@+id/pres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_light"
+            
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/headr_layout"
+           
+            android:text="Prescription"/>
+      <View
+	    android:layout_below="@id/pres"
 	    android:paddingTop="5dp"
-	     android:id="@+id/div"
+	    android:id="@+id/div"
 	    android:paddingBottom="5dp"
 	    android:layout_width="fill_parent"
 	    android:layout_height="0.5dp"
@@ -63,8 +113,43 @@
 	      android:layout_height="wrap_content"
 	      android:layout_below="@+id/div"
 	      android:paddingLeft="5dp"
+	      android:paddingBottom="10dp"
 	      android:paddingTop="5dp"
 	      android:text="Acetaminophen\nAdderall\nCiprofloxacin\nCitalopram" />
+	  
+	  <View
+	    android:layout_below="@id/pre"
+	    android:paddingTop="10dp"
+	    android:id="@+id/div10"
+	    android:paddingBottom="5dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.5dp"
+	    android:background="#c0c0c0"/>
+	  
+	  <RelativeLayout
+        android:id="@+id/footer_layout" 
+        android:layout_below="@id/div10"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        
+	   <TextView
+            android:id="@+id/hosp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_light"
+            android:maxLines="2"
+            android:text="Westend Private"/>
+	    <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:text="22 July 2014"/>
+	       
+	   </RelativeLayout>
 
     </RelativeLayout>
     

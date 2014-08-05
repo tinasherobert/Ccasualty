@@ -37,27 +37,7 @@ public class ScrollViewActivity extends Activity {
        ;
 	    setContentView(helper.createView(this));
 	    helper.initActionBar(this);
-	   // TabHost tabHost = (TabHost)findViewById(android.R.id.tabhost);
-	
-	
-//	    TabSpec tab1 = tabHost.newTabSpec("First Tab");
-//	    TabSpec tab2 = tabHost.newTabSpec("Second Tab");
-//	    TabSpec tab3 = tabHost.newTabSpec("Third tab");
-//	
-//	  
-//	    tab1.setIndicator("Tab1");
-//	    tab1.setContent(new Intent(this,TabActivity1.class));
-//	    
-//	    tab2.setIndicator("Tab2");
-//	    tab2.setContent(new Intent(this,TabActivity2.class));
-//	
-//	    tab3.setIndicator("Tab3");
-//	    tab3.setContent(new Intent(this,TabActivity3.class));
-//	    
-//	    
-//	    tabHost.addTab(tab1);
-//	    tabHost.addTab(tab2);
-//	    tabHost.addTab(tab3);
+	  
     }
 
    

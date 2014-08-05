@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical"
+    android:showDividers="none" >
+
+    <LinearLayout 
+        style="@style/card_outer"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/inner_frame"
+        style="@style/card_inner"
+        android:layout_width="fill_parent" >
+
+      
+        
+      <RelativeLayout
+        android:id="@+id/headr_layout" 
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/product_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/noti" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_toRightOf="@+id/product_icon"
+            android:maxLines="1"
+            android:text="Hopewell Mutanda"
+            android:textSize="20sp" />
+        
+         <TextView
+             android:id="@+id/doc_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView1"
+             android:layout_below="@+id/textView1"
+             android:maxLines="1"
+             android:text="IHDH12H3001"
+             android:textColor="@android:color/holo_blue_light" />
+
+         <TextView
+             android:id="@+id/next_rev"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView1"
+             android:layout_below="@+id/doc_name"
+             android:text="12 Aug 2014, 10:30 AM"
+             android:textColor="@android:color/holo_blue_dark"
+             android:textSize="12sp" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/next_rev"
+             android:layout_below="@+id/next_rev"
+             android:text="A case of 12% Superficial chemical burn" />
+        
+      </RelativeLayout>
+	  
+	  <RelativeLayout
+	      android:id="@+id/footer_layout"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_below="@+id/headr_layout"
+	      android:layout_marginBottom="10dp" >
+	       
+	   </RelativeLayout>
+
+    </RelativeLayout>
+    
+    <ImageView   
+        style="@style/card_shadow"
+        />
+        
+  </LinearLayout> 
+</RelativeLayout>

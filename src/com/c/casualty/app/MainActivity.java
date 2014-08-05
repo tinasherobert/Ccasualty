@@ -4,6 +4,7 @@ import it.sephiroth.android.library.floatingmenu.FloatingActionItem;
 import it.sephiroth.android.library.floatingmenu.FloatingActionMenu;
 
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +30,7 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.PopupWindow;
@@ -55,7 +57,16 @@ public class MainActivity extends FragmentActivity implements AdapterView.OnItem
 		ArrayAdapter<String> adapter =
 			new ArrayAdapter<String>(this, R.layout.activity_list_item, R.id.textView1, objects);
 		mListView.setAdapter(adapter);
-		mListView.setOnItemClickListener(this);
+		mListView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				Intent i = new Intent(MainActivity.this, Details.class);
+				startActivity(i);
+				
+			}
+		});
 
 		Resources res = getResources();
 		int action_item_padding = res.getDimensionPixelSize(R.dimen.float_action_item_padding);
@@ -155,14 +166,7 @@ public class MainActivity extends FragmentActivity implements AdapterView.OnItem
 		return true;
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		int id = item.getItemId();
-		if (id == R.id.example2) {
-			//startActivity(new Intent(this, MainActivity2.class));
-		}
-		return super.onOptionsItemSelected(item);
-	}
+	
 
 	@Override
 	public void onItemClick(final AdapterView<?> parent, final View view, final int position, final long id) {
